@@ -23,7 +23,7 @@ We propose a contrastive learning model, InforMin-CL that discards the redundant
 
 <strong>Train InforMin-CL</strong>
   ---
-Tn the following section, we describe how to train a InforMin-CL model by using our code.<br>
+In the following section, we describe how to train a InforMin-CL model by using our code.<br>
 <strong>Requirements</strong><br>
 First, install PyTorch by following the instructions from the [the official website](https://pytorch.org/). To faithfully reproduce our resutls, please use the correct <code>1.7.1</code> version corresponding to your platforms/CUDA versions. PyTorch version higher than <code>1.7.1</code> should also work. For example, if you use Linux and <strong>CUDA11</strong>, install PyTorch by the following command,<br>
 <code>conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11.0 -c pytorch</code><br>
