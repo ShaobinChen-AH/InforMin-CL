@@ -39,9 +39,9 @@ If you have any questions related to the code or the paper, feel free to contact
 <strong>Citation</strong><br>
   ---
 Please cite our paper if you use InforMin-CL in your work:<br>
-  <code>@inproceedings{chen2022informin-cl,</code><br>
-    <code>title={An Information Minimization Contrastive Learning Model for Unsupervised Sentence Embeddings Learning},</code><br>
-    <code>author={Chen, Shaobin and Zhou, Jie and Sun, Yuling and He Liang},</code><br>
-    <code>booktitle={International Conference of Computational Linguistics (COLING)},</code><br>
-    <code>year={2022}</code><br>
+  <code>@inproceedings{chen2022informin-cl,<br>
+    title={An Information Minimization Contrastive Learning Model for Unsupervised Sentence Embeddings Learning},<br>
+    author={Chen, Shaobin and Zhou, Jie and Sun, Yuling and He Liang},<br>
+    booktitle={International Conference of Computational Linguistics (COLING)},<br>
+    year={2022}<br>
 }</code>
