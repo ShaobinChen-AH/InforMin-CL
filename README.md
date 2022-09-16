@@ -3,14 +3,24 @@
 This repository contains the code and pre-trained models for our paper.<br>
 \*\*\*\*\*\**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***Updates**\*************************************<br>
 <li>8/27: Our paper has been accepted to COLING 2022!</li>
-# <strong>Quick Links</strong><br>
-<li>Overview</li>
-<li>Overview</li>
+<li>9/16: We release our code.</li><br>
 
-Overview<br>
+
+<strong>Quick Links</strong><br>
+  ---
+<li>Overview</li>
+<li>Train InforMin-CL</li>
+<ul>
+<li>Requirements</li>
+</ul>
+<li>Bugs and questions</li>
+<li>Citation</li><br>
+
+<strong>Overview</strong>
   ---
 We propose a contrastive learning model, InforMin-CL that discards the redundant information during the pre-training phase. InforMin-CL keeps important information and forgets redundant information by contrast and reconstruction operations. The following figure is an illustration of our model.<br>
 ![model png](https://user-images.githubusercontent.com/51829876/190571095-ef35e783-dd96-4e41-b4fe-185f735225e1.jpg)
+
 <strong>Train InforMin-CL</strong>
   ---
 Tn the following section, we describe how to train a InforMin-CL model by using our code.<br>
