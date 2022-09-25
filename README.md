@@ -41,7 +41,8 @@ Then run the following script to install the remaining dependencies,<br>
 
 <code>pip install -r requirements.txt</code><br>
 
-<strong>Evaluation></strong><br>
+<strong>Evaluation</strong><br>
+
 Our evaluation code for sentence embeddings is based on a modified version of [SentEval](https://github.com/facebookresearch/SentEval). It evaluates sentence embeddings on unsupervised (semantic textual similarity (STS)) tasks and supervised tasks. For unsupervised tasks, our evaluation takes the "all" setting, and report Spearman's correlation.<br>
 
 Before evaluation, please download the evaluation datasets by running<br>
@@ -51,7 +52,6 @@ Before evaluation, please download the evaluation datasets by running<br>
 </code>
 
 Then come back to the root directory, you can evaluate any <code>transformers</code> -based pre-trained models using our evaluation code. For example,<br>
-
 <code>
   python evaluation.py \
     --model_name_or_path informin-cl-bert-base-uncased \
@@ -60,8 +60,8 @@ Then come back to the root directory, you can evaluate any <code>transformers</c
     --mode test \
 </code>
 
-<strong>Training</strong>
-  ---
+<strong>Training</strong><br>
+<br>
 <code>
 python train.py \
   --model_name_or_path bert-base-uncased \
