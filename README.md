@@ -14,7 +14,7 @@ Unsupervised Sentence Embeddings Learning](https://arxiv.org/abs/2209.10951).<br
 <ul>
 <li>Requirements</li>
 </ul>
-<li>Bugs and questions</li>
+<li>Bugs and Questions</li>
 <li>Citation</li><br>
 
 <strong>Overview</strong>
