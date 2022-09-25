@@ -1,7 +1,9 @@
 # An Information Minimization Based Contrastive Learning Model for Unsupervised Sentence Embeddings Learning.
 
-This repository contains the code and pre-trained models for our paper.<br>
+This repository contains the code and pre-trained models for our paper [An Information Minimization Based Contrastive Learning Model for
+Unsupervised Sentence Embeddings Learning](https://arxiv.org/abs/2209.10951).<br>
 \*\*\*\*\*\**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***Updates**\*************************************<br>
+<li>9/25: Recently I am busy applying for a PhD program. Some information will be updated later.
 <li>8/27: Our paper has been accepted to COLING 2022!</li>
 <li>9/16: We release our code.</li><br>
 
