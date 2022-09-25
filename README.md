@@ -7,7 +7,7 @@ Unsupervised Sentence Embeddings Learning](https://arxiv.org/abs/2209.10951).<br
 <li>9/16: We release our code.
 <li>8/27: Our paper has been accepted to COLING 2022!</li>
 
-<strong>Quick Links</strong><br>
+<strong>Directory</strong><br>
   ---
 <li>Overview</li>
 <li>Train InforMin-CL</li>
