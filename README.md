@@ -3,7 +3,7 @@
 This repository contains the code and pre-trained models for our paper [An Information Minimization Based Contrastive Learning Model for
 Unsupervised Sentence Embeddings Learning](https://arxiv.org/abs/2209.10951).<br>
 \*\*\*\*\*\**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***Updates**\*************************************<br>
-<li>9/25: Recently I am busy applying for a Ph.D. position. Some information will be updated later.
+<li>10/03: Recently I am busy applying for a Ph.D. position. Some information will be updated later.
 <li>9/16: We release our code.
 <li>8/27: Our paper has been accepted to COLING 2022!</li>
 
@@ -82,9 +82,9 @@ If you have any questions related to the code or the paper, feel free to contact
   ---
 Please cite our paper if you use InforMin-CL in your work:<br>
 ```
-    @inproceedings{chen2022informin-cl,<br>
-        title={An Information Minimization Contrastive Learning Model for Unsupervised Sentence Embeddings Learning},<br>
-        author={Chen, Shaobin and Zhou, Jie and Sun, Yuling and He Liang},\
-        booktitle={International Conference of Computational Linguistics (COLING)},\
+    @inproceedings{chen2022informin-cl,
+        title={An Information Minimization Contrastive Learning Model for Unsupervised Sentence Embeddings Learning},
+        author={Chen, Shaobin and Zhou, Jie and Sun, Yuling and He Liang},
+        booktitle={International Conference of Computational Linguistics (COLING)},
         year={2022}}
 ```
