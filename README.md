@@ -22,7 +22,7 @@ Unsupervised Sentence Embeddings Learning](https://arxiv.org/abs/2209.10951).<br
 We propose a contrastive learning model, InforMin-CL that discards the redundant information during the pre-training phase. InforMin-CL keeps important information and forgets redundant information by contrast and reconstruction operations. The following figure is an illustration of our model.<br>
 ![model png](https://user-images.githubusercontent.com/51829876/190571095-ef35e783-dd96-4e41-b4fe-185f735225e1.jpg)
 
-<strong>Train InforMin-CL</strong>
+<strong>Train</strong>
   ---
 In the following section, we describe how to train a InforMin-CL model by using our code.<br>
 
@@ -41,8 +41,16 @@ Then run the following script to install the remaining dependencies,<br>
 
 <code>pip install -r requirements.txt</code><br>
 
-<strong>Evaluation</strong><br>
+<strong>Training</strong><br>
+<br>
+<code>
+python train.py \
+  --model_name_or_path bert-base-uncased \
+</code>
 
+
+<strong>Evaluation</strong><br>
+  ---
 Our evaluation code for sentence embeddings is based on a modified version of [SentEval](https://github.com/facebookresearch/SentEval). It evaluates sentence embeddings on unsupervised (semantic textual similarity (STS)) tasks and supervised tasks. For unsupervised tasks, our evaluation takes the "all" setting, and report Spearman's correlation.<br>
 
 Before evaluation, please download the evaluation datasets by running<br>
@@ -60,13 +68,11 @@ Then come back to the root directory, you can evaluate any <code>transformers</c
     --mode test \
 </code>
 
-<strong>Training</strong><br>
-<br>
-<code>
-python train.py \
-  --model_name_or_path bert-base-uncased \
-</code>
-
+<strong>Language Models</strong><br>
+  ---
+Language models trained for which the performance is reported in the paper is available the Huggingface Model Repository.<br>
+Loading the model in Python. Just replace the name of the model.<br>
+With these models one should be able to reproduce the results on the benchmarks reported in the paper.
 
 <strong>Bugs or questions?</strong><br>
   ---
@@ -75,10 +81,10 @@ If you have any questions related to the code or the paper, feel free to contact
 <strong>Citation</strong><br>
   ---
 Please cite our paper if you use InforMin-CL in your work:<br>
-<code>
-    @inproceedings{chen2022informin-cl,\
-        title={An Information Minimization Contrastive Learning Model for Unsupervised Sentence Embeddings Learning},\
+```
+    @inproceedings{chen2022informin-cl,<br>
+        title={An Information Minimization Contrastive Learning Model for Unsupervised Sentence Embeddings Learning},<br>
         author={Chen, Shaobin and Zhou, Jie and Sun, Yuling and He Liang},\
-      booktitle={International Conference of Computational Linguistics (COLING)},\
-      year={2022}}
-</code>
+        booktitle={International Conference of Computational Linguistics (COLING)},\
+        year={2022}}
+```
