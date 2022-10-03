@@ -9,13 +9,19 @@ Unsupervised Sentence Embeddings Learning](https://arxiv.org/abs/2209.10951).<br
 
 <strong>Directory</strong><br>
   ---
+<ul>
 <li>Overview</li>
-<li>Train InforMin-CL</li>
+<li>Train
 <ul>
 <li>Requirements</li>
+<li>Training</li>
 </ul>
-<li>Bugs and Questions</li>
+</li>
+<li>Evaluation</li>
+<li>Language Models</li>
+<li>Bugs or Questions</li>
 <li>Citation</li><br>
+</ul>
 
 <strong>Overview</strong>
   ---
@@ -74,7 +80,7 @@ Language models trained for which the performance is reported in the paper is av
 Loading the model in Python. Just replace the name of the model.<br>
 With these models one should be able to reproduce the results on the benchmarks reported in the paper.
 
-<strong>Bugs or questions?</strong><br>
+<strong>Bugs or Questions?</strong><br>
   ---
 If you have any questions related to the code or the paper, feel free to contact with Shaobin (<code>chenshaobin000001@gmail.com</code>). If you enconuter any problems when using the code, or want to report a bug, you can open an issue. Please try to specify the problem with details so we can give you a hand!<br>
   
