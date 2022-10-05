@@ -2,7 +2,7 @@
 
 This repository contains the code and pre-trained models for our paper [An Information Minimization Based Contrastive Learning Model for
 Unsupervised Sentence Embeddings Learning](https://arxiv.org/abs/2209.10951).<br>
-\*\*\*\*\*\**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***Updates**\*************************************<br>
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***Updates**\***********************************************************************<br>
 <li>10/03: Recently I am busy applying for a Ph.D. position. Some information will be updated later.
 <li>9/16: We release our code.
 <li>8/27: Our paper has been accepted to COLING 2022!</li>
