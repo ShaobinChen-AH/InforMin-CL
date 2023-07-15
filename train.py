@@ -35,7 +35,7 @@ from transformers.tokenization_utils_base import BatchEncoding, PaddingStrategy,
 from transformers.trainer_utils import is_main_process
 from transformers.data.data_collator import DataCollatorForLanguageModeling
 from transformers.file_utils import cached_property, torch_required, is_torch_available, is_torch_tpu_available
-from simcse.models import RobertaForCL, BertForCL, inverse_predictive_loss
+from simcse.models import RobertaForCL, BertForCL, reconstruction_loss
 from simcse.trainers import CLTrainer
 
 logger = logging.getLogger(__name__)
@@ -123,9 +123,9 @@ class ModelArguments:
             "help": "Use MLP only during training"
         }
     )
-    inverse_predictive_weight: float = field(
+    reconstruction_weight: float = field(
         default=1,
-        metadata={"help":"weight for inverse prediction"}
+        metadata={"help":"weight for reconstruction"}
     )
 
 
@@ -587,10 +587,6 @@ def main():
     print('pooler_type:', model_args.pooler_type)
     print('mlp_only_train:', model_args.mlp_only_train)
     print('do_mlm:', model_args.do_mlm)
-    #print('inverse_predictive_weight:', model_args.inverse_predictive_weight)
-    print('batch size==128')
-    # print('kl weight:',5)
-    print('lambda:',1)
     print('*'*30)
     return results
 
