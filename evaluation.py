@@ -202,8 +202,6 @@ def main():
     print('*'*30)
     print('model_name_or_path:', args.model_name_or_path)
     print('pooler_type:', args.pooler)
-    print('batch size==128')
-    print('lambda:',1)
     print('*'*30)
 
 if __name__ == "__main__":
