@@ -17,32 +17,9 @@ from transformers.file_utils import (
 from transformers.modeling_outputs import SequenceClassifierOutput, BaseModelOutputWithPoolingAndCrossAttentions
 import math
 
-def inverse_predictive_loss(feature1, feature2):
+# L_R in the paper
+def reconstruction_loss(feature1, feature2): 
     return F.mse_loss(feature1, feature2) + F.mse_loss(feature2, feature1)
-
-def forward_predictive_loss(pos, recon_for_):
-    pos = pos.clamp(min=1e-4, max=1. -1e-4)
-    pos = torch.log(pos/(1.-pos))
-    return F.mse_loss(recon_for_, pos)
-    
-def compute_kl_loss(p, q, pad_mask=None):
-    
-    p_loss = F.kl_div(F.log_softmax(p, dim=-1), F.softmax(q, dim=-1), reduction='none')
-    q_loss = F.kl_div(F.log_softmax(q, dim=-1), F.softmax(p, dim=-1), reduction='none')
-    
-    # pad_mask is for seq-level tasks
-    if pad_mask is not None:
-        p_loss.masked_fill_(pad_mask, 0.)
-        q_loss.masked_fill_(pad_mask, 0.)
-
-    # You can choose whether to use function "sum" and "mean" depending on your task
-    p_loss = p_loss.sum()
-    q_loss = q_loss.sum()
-
-    loss = (p_loss + q_loss) / 2
-    return loss
-
-
 
 class MLPLayer(nn.Module):
     """
@@ -247,15 +224,10 @@ def cl_forward(cls,
         masked_lm_loss = loss_fct(prediction_scores.view(-1, cls.config.vocab_size), mlm_labels.view(-1))
         loss = loss + cls.model_args.mlm_weight * masked_lm_loss
 
-    # Add inverse_predictive_loss
+    # Add reconstruction_loss
     z1_norm = F.normalize(z1, dim=-1)
     z2_norm = F.normalize(z2, dim=-1)
-    #loss += cls.model_args.inverse_predictive_weight * inverse_predictive_loss(z1_norm, z2_norm)
-    
-    
-    #add kl loss
-    # kl_loss = compute_kl_loss(z1, z2)
-    # loss += 5 * kl_loss
+    loss += cls.model_args.reconstruction_weight * reconstruction_loss(z1_norm, z2_norm)
     
     if not return_dict:
         output = (cos_sim,) + outputs[2:]
