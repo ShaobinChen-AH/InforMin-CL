@@ -7,7 +7,7 @@
 python train.py \
     --model_name_or_path bert-base-uncased \
     --train_file data/wiki1m_for_simcse.txt \
-    --output_dir /home/ica-702a/1T/chenshaobin/check_results/Unsup-SimCSE-bz128-w-mlm-5e-5\
+    --output_dir unsup-informin-cl\
     --num_train_epochs 1 \
     --per_device_train_batch_size 128 \
     --learning_rate 5e-5 \
